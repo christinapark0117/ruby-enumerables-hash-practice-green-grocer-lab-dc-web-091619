@@ -33,7 +33,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  cart.each do |product
+  cart.each do |product_name, stats|
 end
 
 def checkout(cart, coupons)
