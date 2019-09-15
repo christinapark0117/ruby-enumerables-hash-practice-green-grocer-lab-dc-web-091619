@@ -18,7 +18,7 @@ def apply_coupons(cart, coupons)
     item = coupon[:item]
 
     if cart[item] && coupon_hash[:item][:count] >= coupon[:num] && !cart["#{item} W/COUPON"]
-      cart["#{item} W/COUPON"] = {price: , clearance: , }
+      cart["#{item} W/COUPON"] = {price: , clearance: , count: }
       
     end  
   end
