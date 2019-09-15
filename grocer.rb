@@ -17,7 +17,7 @@ def apply_coupons(cart, coupons)
     
     item = coupon[:item]
 
-    if cart[item] && coupon_hash[:item][:count] >= coupon[:num] && cart["#{item} W/COUPON"]
+    if cart[item] && coupon_hash[:item][:count] >= coupon[:num] && !cart["#{item} W/COUPON"]
       
     end  
   end
