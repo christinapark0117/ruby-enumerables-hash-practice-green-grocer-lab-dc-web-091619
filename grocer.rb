@@ -47,5 +47,5 @@ def checkout(cart, coupons)
   
   total = clearance_cart.reduce(0){|acc, (key, value)| acc += value[:price] * value[:count]
   
-  total > 100? total * 0.9:total
+  total > 100? total * 0.9 : total
 end
